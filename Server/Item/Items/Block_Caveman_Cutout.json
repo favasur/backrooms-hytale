@@ -1,0 +1,27 @@
+{
+  "TranslationProperties": {
+    "Name": "items.block_caveman_cutout.name"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Decoration"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Decoration",
+    "HitboxType": "FullBlock",
+    "Textures": [
+      {
+        "All": "BlockTextures/Block_Caveman_Cutout.png"
+      }
+    ],
+    "BlockSoundSetId": "Stone",
+    "BlockParticleSetId": "Stone",
+    "Flammable": false,
+    "Friction": 0.6,
+    "Hardness": 0.5,
+    "AmbientSoundEventId": "Voyager_Golden_Record_Greetings"
+  }
+}

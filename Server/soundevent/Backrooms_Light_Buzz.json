@@ -1,0 +1,19 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/backrooms-light-buzz.ogg"
+      ],
+      "Volume": 2.0,
+      "Looping": true,
+      "RandomSettings": {
+        "MinPitch": -0.3,
+        "MaxPitch": 0.3,
+        "MinVolume": -0.5
+      }
+    }
+  ],
+  "Volume": 0.0,
+  "Parent": "SFX_Attn_Loud",
+  "AudioCategory": "AudioCat_Ambient"
+}

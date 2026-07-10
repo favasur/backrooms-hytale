@@ -1,0 +1,25 @@
+{
+    "Group": "FavaSur",
+    "Name": "wrongyellow_flicker",
+    "Version": "1.0.0",
+    "Description": "Flickering light effects for White Build Lightsource blocks in the Wrong Yellow mod pack.",
+    "Authors": [
+        {
+            "Name": "FavaSur"
+        }
+    ],
+    "ServerVersion": ">=0.5.3 <0.6.0",
+    "Main": "com.favasur.wrongyellow.FlickerPlugin",
+    "Dependencies": {
+        "Hytale:AssetModule": "*"
+    },
+    "OptionalDependencies": {
+        
+    },
+    "Website": "https://github.com/wrongyellow",
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true,
+    "UpdateChecker": {
+        "CurseForge": ""
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "TranslationProperties": {
+    "Name": "items.block_wool_yellow_light.name"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Materials",
+    "Decoration"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Organic",
+    "HitboxType": "FullBlock",
+    "Textures": [
+      {
+        "All": "BlockTextures/Block_Wool_Yellow_Light.png"
+      }
+    ],
+    "BlockSoundSetId": "Wool",
+    "BlockParticleSetId": "Cloth",
+    "Flammable": true,
+    "Friction": 0.6,
+    "Hardness": 0.8
+  }
+}

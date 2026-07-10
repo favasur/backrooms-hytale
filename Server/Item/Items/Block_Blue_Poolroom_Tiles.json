@@ -1,0 +1,27 @@
+{
+  "TranslationProperties": {
+    "Name": "items.block_blue_poolroom_tiles.name"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Materials",
+    "Decoration"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Stone",
+    "HitboxType": "FullBlock",
+    "Textures": [
+      {
+        "All": "BlockTextures/Block_Blue_Poolroom_Tiles.png"
+      }
+    ],
+    "BlockSoundSetId": "Stone",
+    "BlockParticleSetId": "Stone",
+    "Flammable": false,
+    "Friction": 0.6,
+    "Hardness": 1.5
+  }
+}

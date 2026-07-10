@@ -1,0 +1,33 @@
+{
+  "TranslationProperties": {
+    "Name": "items.block_wool_yellow_light_stairs.name"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Materials",
+    "Decoration"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Group": "Organic",
+    "HitboxType": "Stairs",
+    "CustomModel": "Blocks/Structures/Stairs/Stairs.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/Block_Wool_Yellow_Light_Stairs.png",
+        "Weight": 1
+      }
+    ],
+    "VariantRotation": "UpDownNESW",
+    "PlacementSettings": {
+      "RotationMode": "StairFacingPlayer"
+    },
+    "BlockSoundSetId": "Wool",
+    "BlockParticleSetId": "Cloth",
+    "Flammable": true,
+    "Friction": 0.6,
+    "Hardness": 0.8
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Voyager_Golden_Record_-_Greetings_In_55_Languages.ogg"
+      ],
+      "Volume": 1.5,
+      "Looping": true,
+      "RandomSettings": {
+        "MinPitch": -0.1,
+        "MaxPitch": 0.1,
+        "MinVolume": -0.2
+      }
+    }
+  ],
+  "Volume": 0.0,
+  "Parent": "SFX_Attn_Moderate",
+  "AudioCategory": "AudioCat_Ambient"
+}

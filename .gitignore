@@ -1,0 +1,29 @@
+# Gradle build outputs
+build/
+.gradle/
+build-test/
+build-test-classes/
+
+# Java class files
+*.class
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+jdk25.msi
+jdk25.zip
+jdk25_extracted/
+temp/
+
+# Gradle wrapper binary (keep the properties and scripts, ignore the jar)
+# The jar is needed for building, so it stays in git
+nul

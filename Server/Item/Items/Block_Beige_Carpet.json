@@ -1,0 +1,27 @@
+{
+  "TranslationProperties": {
+    "Name": "items.block_beige_carpet.name"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Materials",
+    "Decoration"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Organic",
+    "HitboxType": "FullBlock",
+    "Textures": [
+      {
+        "All": "BlockTextures/Block_Beige_Carpet.png"
+      }
+    ],
+    "BlockSoundSetId": "Wool",
+    "BlockParticleSetId": "Cloth",
+    "Flammable": true,
+    "Friction": 0.6,
+    "Hardness": 0.8
+  }
+}

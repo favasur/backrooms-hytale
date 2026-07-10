@@ -1,0 +1,32 @@
+{
+  "TranslationProperties": {
+    "Name": "items.block_white_build_lightsource.name"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Materials",
+    "Decoration"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Stone",
+    "HitboxType": "FullBlock",
+    "Textures": [
+      {
+        "All": "BlockTextures/Block_White_Build_Lightsource.png"
+      }
+    ],
+    "Light": {
+      "Color": "#FFFDE8",
+      "Intensity": 15
+    },
+    "BlockSoundSetId": "Stone",
+    "BlockParticleSetId": "Stone",
+    "Flammable": false,
+    "Friction": 0.6,
+    "Hardness": 1.5,
+    "AmbientSoundEventId": "Backrooms_Light_Buzz"
+  }
+}

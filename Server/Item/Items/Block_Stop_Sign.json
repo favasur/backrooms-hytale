@@ -1,0 +1,26 @@
+{
+  "TranslationProperties": {
+    "Name": "items.block_stop_sign.name"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Decoration"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Decoration",
+    "HitboxType": "FullBlock",
+    "Textures": [
+      {
+        "All": "BlockTextures/Block_Stop_Sign.png"
+      }
+    ],
+    "BlockSoundSetId": "Stone",
+    "BlockParticleSetId": "Stone",
+    "Flammable": false,
+    "Friction": 0.6,
+    "Hardness": 0.5
+  }
+}

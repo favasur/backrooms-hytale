@@ -1,0 +1,31 @@
+{
+  "TranslationProperties": {
+    "Name": "items.block_white_build_lightsource_dimmed.name"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Materials",
+    "Decoration"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Stone",
+    "HitboxType": "FullBlock",
+    "Textures": [
+      {
+        "All": "BlockTextures/Block_White_Build_Lightsource.png"
+      }
+    ],
+    "Light": {
+      "Color": "#FFE066",
+      "Intensity": 5
+    },
+    "BlockSoundSetId": "Stone",
+    "BlockParticleSetId": "Stone",
+    "Flammable": false,
+    "Friction": 0.6,
+    "Hardness": 1.5
+  }
+}
