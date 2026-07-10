@@ -79,7 +79,7 @@ wrong-yellow/
 
 Just download and drop the jar into your mods folder — **that's it!** All assets (textures, sounds, block definitions) are bundled inside.
 
-1. Download `WrongYellow_FlickerPlugin-1.0.0.jar` from [Releases](https://github.com/favasur/wrong-yellow/releases)
+1. Download `Backrooms-0.1.1--0.5.6.jar` from [Releases](https://github.com/favasur/wrong-yellow/releases)
 2. Copy it to your Hytale server's `Mods/` folder
 3. Restart or reload the server
 
@@ -106,7 +106,7 @@ cd wrong-yellow
 ./gradlew.bat build
 
 # 4. The compiled jar is at:
-#    build/libs/WrongYellow_FlickerPlugin-1.0.0.jar
+#    build/libs/Backrooms-0.1.1--0.5.6.jar
 ```
 
 **If you have a local Hytale installation**, you can skip `setupHytaleDev` by setting `hytaleHomeOverride` in `gradle.properties`:
