@@ -17,8 +17,8 @@
         "All": "BlockTextures/Block_Beige_Carpet.png"
       }
     ],
-    "BlockSoundSetId": "Wool",
-    "BlockParticleSetId": "Cloth",
+    "BlockSoundSetId": "Cloth",
+    "BlockParticleSetId": "Dust",
     "Flammable": true,
     "Friction": 0.6,
     "Hardness": 0.8

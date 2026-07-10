@@ -23,12 +23,12 @@
     "HitboxType": "Stairs",
     "VariantRotation": "UpDownNESW",
     "Flags": {},
-    "BlockParticleSetId": "Cloth",
+    "BlockParticleSetId": "Dust",
     "Supporting": {
       "Down": [{}],
       "North": [{}]
     },
-    "BlockSoundSetId": "Wool",
+    "BlockSoundSetId": "Cloth",
     "Flammable": true,
     "Friction": 0.6,
     "Hardness": 0.8,

@@ -13,7 +13,6 @@
     "DrawType": "Model",
     "Opacity": "Transparent",
     "Group": "Organic",
-    "HitboxType": "Slab",
     "CustomModel": "Blocks/Structures/Base_Shapes/HalfBlock.blockymodel",
     "CustomModelTexture": [
       {
@@ -23,8 +22,8 @@
     ],
     "VariantRotation": "UpDown",
     "Flags": {},
-    "BlockParticleSetId": "Cloth",
-    "BlockSoundSetId": "Wool",
+    "BlockParticleSetId": "Dust",
+    "BlockSoundSetId": "Cloth",
     "Flammable": true,
     "Friction": 0.6,
     "Hardness": 0.8,
