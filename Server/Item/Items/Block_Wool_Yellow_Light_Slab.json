@@ -21,13 +21,11 @@
         "Weight": 1
       }
     ],
-    "VariantRotation": "UpDown",
+    "VariantRotation": "UpDownNESW",
+    "HitboxType": "Block_Half",
     "Flags": {},
     "BlockParticleSetId": "Dust",
-    "BlockSoundSetId": "Cloth",
-    "PlacementSettings": {
-      "RotationMode": "SlabFacingPlayer"
-    }
+    "BlockSoundSetId": "Cloth"
   },
   "PlayerAnimationsId": "Block",
   "Tags": {
