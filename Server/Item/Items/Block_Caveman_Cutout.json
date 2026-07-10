@@ -20,6 +20,7 @@
     "BlockParticleSetId": "Stone",
     "Flammable": false,
     "Friction": 0.6,
-    "Hardness": 0.5
+    "Hardness": 0.5,
+    "AmbientSoundEventId": "Voyager_Golden_Record_Greetings"
   }
 }
