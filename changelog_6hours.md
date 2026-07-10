@@ -4,7 +4,7 @@ All commits pushed to `origin/master` on https://github.com/favasur/backrooms-hy
 
 ---
 
-## Latest — `[current]` — Remove custom wool block definitions
+## Latest — `cb7be25` — Remove custom wool block definitions
 
 ### Removal
 - Deleted all custom `Cloth_Block_Wool_Yellow_*` JSON block definitions and icon PNGs
