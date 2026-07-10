@@ -1,15 +1,3 @@
-items.cloth_block_wool_yellow_light.name = Light Yellow Wool
-items.cloth_block_wool_yellow_light.description = A unsettlingly familiar yellow wallpaper pattern.
-items.cloth_block_wool_yellow_light_stairs.name = Light Yellow Wool Stairs
-items.cloth_block_wool_yellow_light_stairs.description = Stairs lined with that same yellow wallpaper.
-items.cloth_block_wool_yellow_light_half.name = Light Yellow Wool Half
-items.cloth_block_wool_yellow_light_half.description = A half-block of the ever-present yellow wallpaper.
-items.cloth_block_wool_yellow.name = Yellow Wool
-items.cloth_block_wool_yellow.description = A darker, more worn yellow wallpaper pattern.
-items.cloth_block_wool_yellow_stairs.name = Yellow Wool Stairs
-items.cloth_block_wool_yellow_stairs.description = Stairs covered in aged yellow wallpaper.
-items.cloth_block_wool_yellow_half.name = Yellow Wool Half
-items.cloth_block_wool_yellow_half.description = A half-block of that old, familiar yellow wallpaper.
 items.block_beige_carpet.name = Beige Carpet
 items.block_beige_carpet.description = A warm, beige carpet that feels oddly nostalgic.
 items.block_blue_poolroom_tiles.name = Blue Poolroom Tiles

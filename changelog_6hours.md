@@ -4,25 +4,13 @@ All commits pushed to `origin/master` on https://github.com/favasur/backrooms-hy
 
 ---
 
-## Latest — `7ffa2c4` (tag: `v0.1.12-0.5.6`) — Rename blocks with Cloth_ prefix
+## Latest — `[current]` — Remove custom wool block definitions
 
-### Bulk rename: `Block_Wool_Yellow_*` → `Cloth_Block_Wool_Yellow_*`
-- Renamed all 6 wool block JSON files to prefix with `Cloth_`:
-  - `Block_Wool_Yellow.json` → `Cloth_Block_Wool_Yellow.json`
-  - `Block_Wool_Yellow_Light.json` → `Cloth_Block_Wool_Yellow_Light.json`
-  - `Block_Wool_Yellow_Half.json` → `Cloth_Block_Wool_Yellow_Half.json`
-  - `Block_Wool_Yellow_Light_Half.json` → `Cloth_Block_Wool_Yellow_Light_Half.json`
-  - `Block_Wool_Yellow_Stairs.json` → `Cloth_Block_Wool_Yellow_Stairs.json`
-  - `Block_Wool_Yellow_Light_Stairs.json` → `Cloth_Block_Wool_Yellow_Light_Stairs.json`
-- Updated all internal translation keys (`items.block_wool_yellow_*` → `items.cloth_block_wool_yellow_*`)
-- Updated icon and texture PNG references to `Cloth_Block_Wool_Yellow_*`
-- Renamed all 8 corresponding PNG files (4 BlockTextures + 4 Icons)
-- Updated all language file entries
-
-### Previous: Fix halfblock vertical wall placement
-- Added missing `PlacementSettings.RotationMode: "StairFacingPlayer"` to both halfblock files
-  - This was accidentally removed in commit `58875f9` when `VariantRotation` was changed to `UpDownNESW`
-  - Without it, halfblocks couldn't be placed vertically against walls
+### Removal
+- Deleted all custom `Cloth_Block_Wool_Yellow_*` JSON block definitions and icon PNGs
+- Removed all wool block language entries
+- Kept BlockTexture PNG changes (the actual texture edits)
+- The mod now only provides texture changes for wool blocks via texture pack, without custom block definitions
 
 ---
 
