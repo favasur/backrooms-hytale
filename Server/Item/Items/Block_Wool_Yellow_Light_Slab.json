@@ -25,7 +25,10 @@
     "HitboxType": "Block_Half",
     "Flags": {},
     "BlockParticleSetId": "Dust",
-    "BlockSoundSetId": "Cloth"
+    "BlockSoundSetId": "Cloth",
+    "PlacementSettings": {
+      "RotationMode": "StairFacingPlayer"
+    }
   },
   "PlayerAnimationsId": "Block",
   "Tags": {

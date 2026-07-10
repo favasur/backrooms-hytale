@@ -4,7 +4,18 @@ All commits pushed to `origin/master` on https://github.com/favasur/backrooms-hy
 
 ---
 
-## Latest — `acbd176` (tag: `v0.1.12-0.5.6`) — Refactor flickering onto vanilla block with proper OFF variant
+## Latest — `[current]` (tag: `v0.1.12-0.5.6`) — Fix slab vertical wall placement
+
+### Slab fix
+- **Block_Wool_Yellow_Slab.json**, **Block_Wool_Yellow_Light_Slab.json**
+  - Added missing `PlacementSettings.RotationMode: "StairFacingPlayer"` to both slab files
+  - This was accidentally removed in commit `58875f9` when `VariantRotation` was changed to `UpDownNESW`
+  - Without it, halfblocks/slabs couldn't be placed vertically against walls
+  - Combined with `VariantRotation: "UpDownNESW"` and `HitboxType: "Block_Half"`, slabs now orient correctly on both floors and walls
+
+---
+
+## `acbd176` — Refactor flickering onto vanilla block with proper OFF variant
 
 ### Repo rename
 - GitHub repository renamed from `wrong-yellow` → `backrooms-hytale`
