@@ -4,14 +4,17 @@ All commits pushed to `origin/master` on https://github.com/favasur/backrooms-hy
 
 ---
 
-## Latest — `c231933` (tag: `v0.1.12-0.5.6`) — Fix slab vertical wall placement
+## Latest — `c231933` (tag: `v0.1.12-0.5.6`) — Fix halfblock vertical wall placement
 
-### Slab fix
-- **Block_Wool_Yellow_Slab.json**, **Block_Wool_Yellow_Light_Slab.json**
-  - Added missing `PlacementSettings.RotationMode: "StairFacingPlayer"` to both slab files
+### Halfblock fix
+- **Block_Wool_Yellow_Slab.json** → **Block_Wool_Yellow_Half.json** rename
+- **Block_Wool_Yellow_Light_Slab.json** → **Block_Wool_Yellow_Light_Half.json** rename
+  - Renamed files from `_Slab` to `_Half` for consistency
+  - Updated translation keys (`items.block_wool_yellow_*_slab.*` → `_half.*`) and display names
+  - Added missing `PlacementSettings.RotationMode: "StairFacingPlayer"` to both halfblock files
   - This was accidentally removed in commit `58875f9` when `VariantRotation` was changed to `UpDownNESW`
-  - Without it, halfblocks/slabs couldn't be placed vertically against walls
-  - Combined with `VariantRotation: "UpDownNESW"` and `HitboxType: "Block_Half"`, slabs now orient correctly on both floors and walls
+  - Without it, halfblocks couldn't be placed vertically against walls
+  - Combined with `VariantRotation: "UpDownNESW"` and `HitboxType: "Block_Half"`, halfblocks now orient correctly on both floors and walls
 
 ---
 
