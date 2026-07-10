@@ -73,7 +73,7 @@ public class FlickeringTickingSystem extends TickingSystem<ChunkStore> {
 
         if (!hasLogged) {
             HytaleLogger.getLogger().at(Level.INFO).log(
-                    "WrongYellow FlickerSystem ticking on world: " + world.getName());
+                    "Backrooms FlickerSystem ticking on world: " + world.getName());
             hasLogged = true;
         }
 

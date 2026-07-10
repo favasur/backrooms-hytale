@@ -1,8 +1,8 @@
 {
     "Group": "FavaSur",
-    "Name": "wrongyellow",
-    "Version": "0.1.0--0.5.6",
-    "Description": "Flickering light effects for White Build Lightsource blocks in the Wrong Yellow mod pack.",
+    "Name": "backrooms",
+    "Version": "0.1.1--0.5.6",
+    "Description": "Flickering light effects and backrooms-themed blocks.",
     "Authors": [
         {
             "Name": "FavaSur"
@@ -16,7 +16,7 @@
     "OptionalDependencies": {
         
     },
-    "Website": "https://github.com/wrongyellow",
+    "Website": "https://github.com/favasur/backrooms",
     "DisabledByDefault": false,
     "IncludesAssetPack": true,
     "UpdateChecker": {

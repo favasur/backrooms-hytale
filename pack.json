@@ -1,10 +1,10 @@
 {
-  "Group": "WrongYellow",
-  "Name": "Wrong Yellow",
+  "Group": "Backrooms",
+  "Name": "Backrooms",
   "Version": "0.5.6",
   "Description": "A backrooms-themed texture pack that transforms wool blocks into unsettling yellow wallpaper patterns.",
   "Authors": [
-    "WrongYellow"
+    "Backrooms"
   ],
   "ServerVersion": "*",
   "IncludedAssetPack": true

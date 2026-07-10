@@ -7,7 +7,7 @@ import javax.annotation.Nonnull;
 import java.util.logging.Level;
 
 /**
- * Wrong Yellow Flicker Plugin
+ * Backrooms Flicker Plugin
  * <p>
  * Adds rapid ON↔OFF flickering to the dedicated flickering variant
  * of the White Build Lightsource block. The vanilla lightsource
@@ -21,19 +21,19 @@ public class FlickerPlugin extends JavaPlugin {
 
     public FlickerPlugin(@Nonnull JavaPluginInit init) {
         super(init);
-        log("WrongYellow FlickerPlugin constructed.");
+        log("Backrooms FlickerPlugin constructed.");
     }
 
     @Override
     protected void setup() {
-        log("WrongYellow FlickerPlugin setting up...");
+        log("Backrooms FlickerPlugin setting up...");
 
         // Register the ticking system that drives the flicker effect
         FlickeringTickingSystem tickingSystem = new FlickeringTickingSystem();
         getChunkStoreRegistry().registerSystem(tickingSystem);
         log("Registered FlickeringTickingSystem");
 
-        log("WrongYellow FlickerPlugin setup complete.");
+        log("Backrooms FlickerPlugin setup complete.");
         log(String.format(
                 "Flickering ON↔OFF enabled for: %s <-> %s",
                 FlickeringTickingSystem.BLOCK_FLICKER,
