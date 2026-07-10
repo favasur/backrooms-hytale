@@ -23,6 +23,7 @@
     "HitboxType": "Plant_Tall_Full",
     "BlockSoundSetId": "Stone",
     "BlockParticleSetId": "Stone",
+    "AmbientSoundEventId": "Voyager_Golden_Record_Greetings",
     "PlacementSettings": {
       "RotationMode": "StairFacingPlayer"
     }

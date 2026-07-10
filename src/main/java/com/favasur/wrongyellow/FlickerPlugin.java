@@ -9,13 +9,13 @@ import java.util.logging.Level;
 /**
  * Backrooms Flicker Plugin
  * <p>
- * Adds rapid ON↔OFF flickering to the dedicated flickering variant
- * of the White Build Lightsource block. The vanilla lightsource
- * block is never touched — it stays statically on.
+ * Adds rapid ON↔OFF flickering to the vanilla Build_Lightsource_White
+ * block. Swaps between the ON variant (with light and buzz sound)
+ * and the OFF variant (same texture, no light, no sound).
  * <p>
- * Block variant IDs (defined in Server/Item/Items/):
- * - Block_White_Build_Lightsource_Flickering (ON, has buzz sound)
- * - Block_White_Build_Lightsource_Off         (OFF, no sound)
+ * Block IDs:
+ * - Build_Lightsource_White      (ON, has light + buzz sound)
+ * - Block_Lightsource_White_Off  (OFF, same texture, no light/sound)
  */
 public class FlickerPlugin extends JavaPlugin {
 
@@ -36,7 +36,7 @@ public class FlickerPlugin extends JavaPlugin {
         log("Backrooms FlickerPlugin setup complete.");
         log(String.format(
                 "Flickering ON↔OFF enabled for: %s <-> %s",
-                FlickeringTickingSystem.BLOCK_FLICKER,
+                FlickeringTickingSystem.BLOCK_ON,
                 FlickeringTickingSystem.BLOCK_OFF
         ));
     }

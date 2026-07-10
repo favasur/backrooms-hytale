@@ -32,17 +32,17 @@ import java.util.logging.Level;
  */
 public class FlickeringTickingSystem extends TickingSystem<ChunkStore> {
 
-    /** Only tracks the dedicated flickering variant block. */
-    public static final String BLOCK_FLICKER = "Block_White_Build_Lightsource_Flickering";
-    /** The OFF variant used during flicker bursts. */
-    public static final String BLOCK_OFF     = "Block_White_Build_Lightsource_Off";
+    /** The vanilla lightsource block — flickered ON (with light & sound). */
+    public static final String BLOCK_ON  = "Build_Lightsource_White";
+    /** OFF variant — same texture, no light, no sound. */
+    public static final String BLOCK_OFF = "Block_Lightsource_White_Off";
 
     // State constants: only ON (FULL) and OFF
     private static final int STATE_ON  = 0;
     private static final int STATE_OFF = 1;
 
     // Block ID strings for each state
-    private static final String[] STATE_BLOCK_IDS = { BLOCK_FLICKER, BLOCK_OFF };
+    private static final String[] STATE_BLOCK_IDS = { BLOCK_ON, BLOCK_OFF };
 
     // Chunks to scan per tick for block discovery
     private static final int CHUNKS_PER_TICK = 2;
@@ -83,8 +83,7 @@ public class FlickeringTickingSystem extends TickingSystem<ChunkStore> {
 
     /**
      * Rapid ON↔OFF cycling with realistic chaos.
-     * The buzz sound on BLOCK_FLICKER (ON) turns on/off naturally with block swaps.
-     * Vanilla Block_White_Build_Lightsource is NEVER tracked — it stays static.
+     * The buzz sound on BLOCK_ON turns on/off naturally with block swaps.
      */
     private void processTrackedBlocks(World world) {
         LongIterator iter = flickerMap.keySet().iterator();
@@ -117,15 +116,15 @@ public class FlickeringTickingSystem extends TickingSystem<ChunkStore> {
             boolean nextIsFlickering;
 
             if (!isFlickering) {
-                // Brief pause — high chance to resume chaotic flickering
-                if (random.nextFloat() < 0.5f) {
+                // Long rest — low chance to enter a flicker burst
+                if (random.nextFloat() < 0.12f) {
                     nextState = STATE_OFF;
                     nextIsFlickering = true;
                     ticksUntilChange = random.nextInt(3) + 1;
                 } else {
                     nextState = STATE_ON;
                     nextIsFlickering = false;
-                    ticksUntilChange = random.nextInt(15) + 8; // ~0.5-1 sec pause
+                    ticksUntilChange = random.nextInt(80) + 40; // ~2-6 sec rest
                 }
             } else {
                 // Rapid ON↔OFF cycling
@@ -135,10 +134,10 @@ public class FlickeringTickingSystem extends TickingSystem<ChunkStore> {
                     // Just cycled back to ON — chance to end the burst
                     if (random.nextFloat() < 0.4f) {
                         nextIsFlickering = false;
-                        ticksUntilChange = random.nextInt(20) + 10; // ~0.5-1.5 sec rest
+                        ticksUntilChange = random.nextInt(80) + 40; // ~2-6 sec rest
                     } else {
                         nextIsFlickering = true;
-                        ticksUntilChange = random.nextInt(4) + 1; // 1-4 ticks
+                        ticksUntilChange = random.nextInt(4) + 1; // 1-4 ticks — rapid
                     }
                 } else {
                     // Going OFF — continue burst
@@ -165,8 +164,7 @@ public class FlickeringTickingSystem extends TickingSystem<ChunkStore> {
     }
 
     /**
-     * Scans loaded chunks for the flickering variant block only.
-     * The vanilla Block_White_Build_Lightsource is never discovered — it stays static.
+     * Scans loaded chunks for Build_Lightsource_White or its OFF variant.
      */
     private void discoverNewBlocks(World world, ChunkStore chunkStore) {
         LongSet chunkIndexes = chunkStore.getChunkIndexes();
@@ -204,22 +202,23 @@ public class FlickeringTickingSystem extends TickingSystem<ChunkStore> {
                         int wz = baseZ | lz;
                         String blockId = blockAccessor.getBlockType(wx, y, wz).getId();
 
-                        if (BLOCK_FLICKER.equals(blockId)) {
+                        if (BLOCK_ON.equals(blockId)) {
+                            // Discovered a lightsource — start tracking for flickering
                             int localPos = lx | (y << 4) | (lz << 12);
                             long packedKey = (chunkIndex << 32) | (localPos & 0xFFFFFFFFL);
                             if (!flickerMap.containsKey(packedKey)) {
                                 int data = STATE_ON
-                                        | ((random.nextInt(20) + 5) << 4)
+                                        | ((random.nextInt(60) + 30) << 4) // ~1.5-4.5 sec before first flicker
                                         | (0 << 16);
                                 flickerMap.put(packedKey, data);
                             }
                         } else if (BLOCK_OFF.equals(blockId)) {
-                            // Discovered an OFF variant mid-flicker
+                            // Discovered the OFF variant mid-flicker
                             int localPos = lx | (y << 4) | (lz << 12);
                             long packedKey = (chunkIndex << 32) | (localPos & 0xFFFFFFFFL);
                             if (!flickerMap.containsKey(packedKey)) {
                                 int data = STATE_OFF
-                                        | ((random.nextInt(6) + 2) << 4)
+                                        | ((random.nextInt(3) + 1) << 4) // rapid cycle
                                         | (1 << 16);
                                 flickerMap.put(packedKey, data);
                             }

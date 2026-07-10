@@ -1,0 +1,32 @@
+{
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Opacity": "Transparent",
+    "Group": "Dev",
+    "HitboxType": "Full",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "BlockParticleSetId": "Crystal",
+    "Textures": [
+      {
+        "Weight": 1,
+        "All": "BlockTextures/Build_Lightsource_White.png"
+      }
+    ],
+    "ParticleColor": "#969696",
+    "BlockSoundSetId": "Crystal",
+    "PhysicalMaterialId": "Stone",
+    "CubeShadingMode": "Fullbright",
+    "VariantRotation": "Pipe",
+    "Light": {
+      "Color": "#332200",
+      "Radius": 0
+    },
+    "TextureComputedColor": "#FFFFF3"
+  }
+}
