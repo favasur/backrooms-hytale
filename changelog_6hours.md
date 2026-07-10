@@ -1,10 +1,16 @@
 # Changelog — Last 6 Hours (July 10, 2026)
 
-All commits pushed to `origin/master` on https://github.com/favasur/wrong-yellow.git
+All commits pushed to `origin/master` on https://github.com/favasur/backrooms-hytale.git
 
 ---
 
-## Latest — `acbd176` — Refactor flickering onto vanilla block with proper OFF variant
+## Latest — `acbd176` (tag: `v0.1.12-0.5.6`) — Refactor flickering onto vanilla block with proper OFF variant
+
+### Repo rename
+- GitHub repository renamed from `wrong-yellow` → `backrooms-hytale`
+- Local root folder renamed to match
+- All URLs and references updated in README, changelog
+- Git remote URL updated to `https://github.com/favasur/backrooms-hytale.git`
 
 ### Big refactor: Custom blocks → Vanilla override
 - Removed all 3 custom `Block_White_Build_Lightsource` variants (ON/Flickering/Off)

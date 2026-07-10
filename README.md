@@ -42,7 +42,7 @@ The **Wrong Yellow Flicker Plugin** (`com.favasur.wrongyellow.FlickerPlugin`) ad
 ## 📁 Project Structure
 
 ```
-wrong-yellow/
+backrooms-hytale/
 ├── pack.json                  # Hytale asset pack manifest
 ├── build.gradle.kts           # Gradle build (Kotlin DSL)
 ├── settings.gradle.kts        # Gradle settings
@@ -68,7 +68,7 @@ wrong-yellow/
 │
 ├── Plugins/                   # Deploy target for compiled .jar
 └── build/libs/                # Built jar with ALL assets bundled
-    └── WrongYellow_FlickerPlugin-1.0.0.jar  ← Single file to distribute
+    └── Backrooms-0.1.12--0.5.6.jar  ← Single file to distribute
 ```
 
 ---
@@ -79,7 +79,7 @@ wrong-yellow/
 
 Just download and drop the jar into your mods folder — **that's it!** All assets (textures, sounds, block definitions) are bundled inside.
 
-1. Download `Backrooms-0.1.12--0.5.6.jar` from [Releases](https://github.com/favasur/wrong-yellow/releases)
+1. Download `Backrooms-0.1.12--0.5.6.jar` from [Releases](https://github.com/favasur/backrooms-hytale/releases)
 2. Copy it to your Hytale server's `Mods/` folder
 3. Restart or reload the server
 
@@ -95,8 +95,8 @@ Just download and drop the jar into your mods folder — **that's it!** All asse
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/favasur/wrong-yellow.git
-cd wrong-yellow
+git clone https://github.com/favasur/backrooms-hytale.git
+cd backrooms-hytale
 
 # 2. Set up Hytale development environment
 #    (requires Hytale OAuth authentication the first time)
