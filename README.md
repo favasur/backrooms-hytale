@@ -24,16 +24,17 @@
 | ⬜ Light Gray Poolroom Tiles | `light gray poolrom tiles.png` | — | Hums with fluorescent light |
 | 🗿 Caveman Cutout | `caveman cutout.png` | 🌐 Voyager Golden Record greetings (looping) | A whispering primitive figure |
 | 🛑 Stop Sign | `stop sign.png` | — | A red stop sign out of place |
-| 💡 White Build Lightsource | `Block_White_Build_Lightsource.png` | 🔇 Backrooms light buzz (looping) | **Flickers** via the Java plugin! |
+| 💡 Build Lightsource White (vanilla) | `BlockTextures/Build_Lightsource_White.png` | 🔇 Backrooms light buzz (looping) | **Flickers** ON↔OFF via the Java plugin! |
 
 ### 🔌 Server Plugin — Flickering Lights
 
-The **Wrong Yellow Flicker Plugin** (`com.favasur.wrongyellow.FlickerPlugin`) adds dynamic flickering to the White Build Lightsource block:
+The **Wrong Yellow Flicker Plugin** (`com.favasur.wrongyellow.FlickerPlugin`) adds dynamic flickering to the **vanilla** `Build_Lightsource_White` block:
 
-- **Random flicker bursts** every 2–5 seconds
-- Rapidly cycles between **Full → Dimmed → Off → Dimmed → Full**
+- **Rare flicker bursts** (~12% chance, every 2–6 seconds of rest)
+- Rapidly cycles between **ON** (with buzz sound) and **OFF** (no light, no sound)
 - Each block has staggered timings so they never sync up
-- Three block variants: `Block_White_Build_Lightsource`, `_Dimmed`, `_Off`
+- Two block variants: `Build_Lightsource_White` (ON) and `Block_Lightsource_White_Off` (OFF)
+- OFF variant uses the same vanilla texture — just no light or sound
 - Plugin automatically discovers placed lightsource blocks and tracks them
 
 ---
@@ -51,7 +52,7 @@ wrong-yellow/
 │
 ├── Server/                    # ← Bundled INTO the jar at build time
 │   ├── Item/Items/            # Block/item JSON definitions
-│   ├── soundevent/            # Sound event registrations
+│   ├── Audio/SoundEvents/     # Sound event registrations
 │   └── Languages/en-US/       # Translation strings
 │
 ├── Common/                    # ← Bundled INTO the jar at build time
@@ -126,11 +127,11 @@ Then just run:
 All blocks can be found in the Creative Menu under their respective categories (Decoration, Materials, Stone, Organic). Place them like any other block.
 
 ### Flickering Lights
-1. Place a **White Build Lightsource** block
+1. Place a **Build_Lightsource_White** block (vanilla)
 2. The plugin automatically discovers it (may take a few seconds)
 3. It will emit a looping buzz sound and flicker at random intervals
-4. The `AmbientSoundEventId: "Backrooms_Light_Buzz"` plays constantly
-5. The plugin swaps between three block variants for the visual flicker effect
+4. The `AmbientSoundEventId: "Backrooms_Light_Buzz"` plays on the ON variant
+5. The plugin swaps between ON (with light + sound) and OFF (no light, no sound)
 
 ### Caveman Cutout Sound
 The Caveman Cutout loops the Voyager Golden Record greetings in 55 languages via `AmbientSoundEventId: "Voyager_Golden_Record_Greetings"`.
@@ -144,7 +145,7 @@ The Caveman Cutout loops the Voyager Golden Record greetings in 55 languages via
 | `Voyager_Golden_Record_Greetings` | `Sounds/Voyager_Golden_Record_-_Greetings_In_55_Languages.ogg` | ✅ | 1.5 |
 | `Backrooms_Light_Buzz` | `Sounds/backrooms-light-buzz.ogg` | ✅ | 2.0 |
 
-Sound events are defined in `Server/soundevent/` JSON files and registered with standard Hytale attenuation profiles (`SFX_Attn_Moderate`, `SFX_Attn_Loud`).
+Sound events are defined in `Server/Audio/SoundEvents/` JSON files and registered with standard Hytale attenuation profiles (`SFX_Attn_Moderate`, `SFX_Attn_Loud`).
 
 ---
 
@@ -153,8 +154,9 @@ Sound events are defined in `Server/soundevent/` JSON files and registered with 
 - **Plugin Type:** Java plugin for Hytale Server API
 - **Base Class:** `com.hypixel.hytale.server.core.plugin.JavaPlugin`
 - **ECS System:** `TickingSystem<ChunkStore>` with per-block state tracking via `Long2IntOpenHashMap`
-- **Block Swapping:** `BlockAccessor.setBlock(x, y, z, blockId)`
+- **Block Swapping:** `BlockAccessor.setBlock(x, y, z, blockId)` between ON/OFF variants
 - **Block Discovery:** Round-robin chunk scanning (2 chunks/tick, 16 Y-slices each)
+- **Flicker Timing:** 12% burst chance, 2-6s rest, 1-4 ticks per state during bursts
 - **Build System:** Gradle 9.5.1 with `com.azuredoom.hytale-tools` plugin
 - **Server Compatibility:** Hytale `>=0.5.3 <0.6.0`
 

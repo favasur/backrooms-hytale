@@ -4,7 +4,39 @@ All commits pushed to `origin/master` on https://github.com/favasur/wrong-yellow
 
 ---
 
-## Latest — `2c7a211` — Fix Caveman/Stop Sign collision
+## Latest — `acbd176` — Refactor flickering onto vanilla block with proper OFF variant
+
+### Big refactor: Custom blocks → Vanilla override
+- Removed all 3 custom `Block_White_Build_Lightsource` variants (ON/Flickering/Off)
+- Created vanilla `Build_Lightsource_White` override at `Build/Lightsource/` with:
+  - `AmbientSoundEventId: "Backrooms_Light_Buzz"` for looping buzz sound
+  - `Light.Radius: 15` for actual world light emission
+- Created `Block_Lightsource_White_Off` as OFF variant (same vanilla texture, no light, no sound)
+- Flickering now works on the **vanilla** lightsource block — no custom block needed
+
+### Flickering timing rebalance
+- Flicker burst chance: **50% → 12%** (much rarer)
+- Rest period between bursts: **0.5-1s → 2-6s**
+- Initial delay before first flicker: **0.25-1s → 1.5-4.5s**
+- Rapid cycling during bursts kept the same (1-4 ticks per state)
+- `BLOCK_OFF` changed from `Build_Black_Cube` → `Block_Lightsource_White_Off`
+
+### Sound fixes
+- Sound events restored at `Server/Audio/SoundEvents/` (correct path the game scans)
+- Removed old test path `Server/soundevent/`
+- Added `AudioCategory: AudioCat_Ambient` back to both sound events
+- Changed `Volume` from `0` back to `0.0` (matching original working format)
+- Lightsource and Caveman Cutout now emit their looping ambient sounds correctly
+
+### Texture fixes
+- Panel_2Tall and Panel_3Tall blockymodels:
+  - `doubleSided: true → false` (single layer rendering)
+  - Back face offset matches front face offset (was using different atlas region)
+  - Right/left face offsets changed to `x=0` (solid color, prevents texture bleeding)
+
+---
+
+## `2c7a211` — Fix Caveman/Stop Sign collision
 
 - **Block_Caveman_Cutout.json**, **Block_Stop_Sign.json**
   - Removed `Material: Solid` field entirely (following base game plant block pattern)
