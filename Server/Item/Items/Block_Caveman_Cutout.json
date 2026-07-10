@@ -9,7 +9,6 @@
     "Decoration"
   ],
   "BlockType": {
-    "Material": "Plant",
     "DrawType": "Model",
     "Opacity": "Transparent",
     "Group": "Decoration",
@@ -21,6 +20,7 @@
       }
     ],
     "VariantRotation": "UpDownNESW",
+    "HitboxType": "Plant_Tall_Full",
     "BlockSoundSetId": "Stone",
     "BlockParticleSetId": "Stone",
     "PlacementSettings": {
