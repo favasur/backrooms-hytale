@@ -1,4 +1,5 @@
 {
+  "format": "prop",
   "lod": "off",
   "nodes": [ {
       "id": "0",
@@ -34,7 +35,7 @@
           "right": { "offset": { "x": 0, "y": 0 }, "mirror": { "x": false, "y": false }, "angle": 0 }
         },
         "type": "box",
-        "settings": {
+        "settings": { "isPiece": false,
           "size": {
             "x": 32,
             "y": 16,
@@ -80,7 +81,7 @@
               "right": { "offset": { "x": 0, "y": 0 }, "mirror": { "x": false, "y": false }, "angle": 0 }
             },
             "type": "box",
-            "settings": {
+            "settings": { "isPiece": false,
               "size": {
                 "x": 32,
                 "y": 16,

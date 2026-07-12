@@ -3,7 +3,7 @@
   "lod": "off",
   "nodes": [{
     "id": "0",
-    "name": "Pillar",
+    "name": "Panel_1x2",
     "position": { "x": 0, "y": 16, "z": 0 },
     "orientation": { "x": 0, "y": 0, "z": 0, "w": 1 },
     "shape": {
@@ -18,7 +18,7 @@
         "right": { "offset": { "x": 0, "y": 0 }, "mirror": { "x": false, "y": false }, "angle": 0 }
       },
       "type": "box",
-      "settings": { "isPiece": false, "size": { "x": 8, "y": 32, "z": 8 } },
+      "settings": { "isPiece": false, "size": { "x": 16, "y": 32, "z": 2 } },
       "unwrapMode": "custom",
       "visible": true,
       "doubleSided": false,

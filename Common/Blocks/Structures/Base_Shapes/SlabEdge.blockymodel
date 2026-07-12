@@ -1,4 +1,5 @@
 {
+  "format": "prop",
   "lod": "off",
   "nodes": [{
     "id": "0",
@@ -17,7 +18,7 @@
         "right": { "offset": { "x": 0, "y": 0 }, "mirror": { "x": false, "y": false }, "angle": 0 }
       },
       "type": "box",
-      "settings": { "size": { "x": 32, "y": 8, "z": 16 } },
+      "settings": { "isPiece": false, "size": { "x": 32, "y": 8, "z": 16 } },
       "unwrapMode": "custom",
       "visible": true,
       "doubleSided": false,

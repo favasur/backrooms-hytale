@@ -12,7 +12,7 @@
     "DrawType": "Model",
     "Opacity": "Transparent",
     "Group": "Decoration",
-    "CustomModel": "Blocks/Structures/Base_Shapes/Panel_2Tall.blockymodel",
+    "CustomModel": "Blocks/Structures/Base_Shapes/Panel_1x2.blockymodel",
     "CustomModelTexture": [
       {
         "Texture": "BlockTextures/Block_Caveman_Cutout.png",
