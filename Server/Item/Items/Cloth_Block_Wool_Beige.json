@@ -1,0 +1,32 @@
+{
+  "TranslationProperties": {
+    "Name": "items.cloth_block_wool_beige.name",
+    "Description": "items.cloth_block_wool_beige.description"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Materials",
+    "Decoration"
+  ],
+  "Icon": "Icons/ItemsGenerated/Cloth_Block_Wool_Beige.png",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Organic",
+    "Textures": [
+      {
+        "All": "BlockTextures/Block_Beige_Carpet.png"
+      }
+    ],
+    "BlockSoundSetId": "Cloth",
+    "BlockParticleSetId": "Dust"
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Cloth"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Cloth"
+}

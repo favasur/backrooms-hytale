@@ -1,0 +1,33 @@
+{
+  "TranslationProperties": {
+    "Name": "items.framing_tool.name",
+    "Description": "items.framing_tool.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Framing_Tool.png",
+  "ItemLevel": 1,
+  "MaxStack": 1,
+  "Categories": [
+    "Tool"
+  ],
+  "SubCategory": "Tools",
+  "PlayerAnimationsId": "Tool",
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Quality": "Epic",
+  "Gathering": {
+    "Breaking": {
+      "GatherType": "Rocks"
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

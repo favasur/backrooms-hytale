@@ -1,0 +1,32 @@
+{
+  "TranslationProperties": {
+    "Name": "items.block_wallpaper_leaf.name",
+    "Description": "items.block_wallpaper_leaf.description"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Materials",
+    "Decoration"
+  ],
+  "Icon": "Icons/ItemsGenerated/Block_Wallpaper_Leaf.png",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Organic",
+    "Textures": [
+      {
+        "All": "BlockTextures/Block_Leaf_Wallpaper.png"
+      }
+    ],
+    "BlockSoundSetId": "Cloth",
+    "BlockParticleSetId": "Dust"
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Cloth"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Cloth"
+}

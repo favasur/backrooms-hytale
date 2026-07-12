@@ -9,7 +9,7 @@
         }
     ],
     "ServerVersion": ">=0.5.3 <0.6.0",
-    "Main": "com.favasur.wrongyellow.FlickerPlugin",
+    "Main": "com.favasur.wrongyellow.WrongYellowPlugin",
     "Dependencies": {
         "Hytale:AssetModule": "*"
     },

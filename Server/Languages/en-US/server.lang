@@ -17,3 +17,163 @@ items.block_white_build_lightsource_off.description = A dead light panel. The si
 items.block_stop_sign.name = Stop Sign
 items.block_stop_sign.description = A red stop sign. It doesn't seem to belong to any road.
 
+# ── Wallpaper Blocks ───────────────────────────────────────────
+items.block_wallpaper_yellow.name = Yellow Wallpaper
+items.block_wallpaper_yellow.description = The classic yellow wallpaper — familiar and wrong.
+items.block_wallpaper_yellow_light.name = Light Yellow Wallpaper
+items.block_wallpaper_yellow_light.description = A faded, lighter variant of the yellow wallpaper.
+items.block_wallpaper_leaf.name = Leaf Wallpaper
+items.block_wallpaper_leaf.description = A wallpaper patterned with dried leaves. It crinkles slightly.
+
+# ── Wallpaper Blocks (Slab variants) ───────────────────────────
+items.block_wallpaper_yellow_slab.name = Yellow Wallpaper Slab
+items.block_wallpaper_yellow_light_slab.name = Light Yellow Wallpaper Slab
+items.block_wallpaper_leaf_slab.name = Leaf Wallpaper Slab
+
+# ── Wallpaper Blocks (Slope variants) ──────────────────────────
+items.block_wallpaper_yellow_slope.name = Yellow Wallpaper Slope
+items.block_wallpaper_leaf_slope.name = Leaf Wallpaper Slope
+items.block_wallpaper_yellow_light_slope.name = Light Yellow Wallpaper Slope
+
+# ── Wool Blocks (Beige) ────────────────────────────────────────
+items.cloth_block_wool_beige.name = Beige Wool
+items.cloth_block_wool_beige.description = A warm beige wool block. Soft and unsettling.
+items.cloth_block_wool_beige_slope.name = Beige Wool Slope
+items.cloth_block_wool_beige_slope.description = A sloped beige wool block.
+
+# ── FramedBlocks (Empty Frames — Core) ─────────────────────────
+items.frame_empty.name = Frame
+items.frame_empty.description = An empty structural frame. Right-click with camouflage material and a Framing Tool to apply.
+items.frame_empty_slab.name = Frame Slab
+items.frame_empty_slab.description = An empty framed half-slab.
+items.frame_empty_doubleslab.name = Frame Double Slab
+items.frame_empty_doubleslab.description = An empty framed double-height slab.
+items.frame_empty_slabedge.name = Frame Slab Edge
+items.frame_empty_slabedge.description = An empty framed slab edge piece.
+items.frame_empty_slabcorner.name = Frame Slab Corner
+items.frame_empty_slabcorner.description = An empty framed slab corner piece.
+items.frame_empty_panel.name = Frame Panel
+items.frame_empty_panel.description = An empty framed wall panel.
+items.frame_empty_panel3tall.name = Frame Panel 3-Tall
+items.frame_empty_panel3tall.description = An empty framed extra-tall wall panel.
+items.frame_empty_doublepanel.name = Frame Double Panel
+items.frame_empty_doublepanel.description = An empty framed double panel.
+items.frame_empty_centeredslab.name = Frame Centered Slab
+items.frame_empty_centeredslab.description = An empty framed centered slab.
+items.frame_empty_centeredpanel.name = Frame Centered Panel
+items.frame_empty_centeredpanel.description = An empty framed centered panel.
+
+# ── FramedBlocks (Stairs) ───────────────────────────────────────
+items.frame_empty_stairs.name = Frame Stairs
+items.frame_empty_stairs.description = An empty framed stair block.
+items.frame_empty_doublestairs.name = Frame Double Stairs
+items.frame_empty_doublestairs.description = An empty framed double-height stair block.
+items.frame_empty_halfstairs.name = Frame Half Stairs
+items.frame_empty_halfstairs.description = An empty framed half-height stair block.
+items.frame_empty_dividedstairs.name = Frame Divided Stairs
+items.frame_empty_dividedstairs.description = An empty framed divided stair block.
+items.frame_empty_verticalstairs.name = Frame Vertical Stairs
+items.frame_empty_verticalstairs.description = An empty framed vertical stair block.
+items.frame_empty_verticaldoublestairs.name = Frame Vertical Double Stairs
+items.frame_empty_verticaldoublestairs.description = An empty framed vertical double stair block.
+
+# ── FramedBlocks (Corner Stairs) ────────────────────────────────
+items.frame_empty_stairscornerleft.name = Frame Stairs (Corner Left)
+items.frame_empty_stairscornerleft.description = An empty framed left-corner stair block.
+items.frame_empty_stairscornerright.name = Frame Stairs (Corner Right)
+items.frame_empty_stairscornerright.description = An empty framed right-corner stair block.
+items.frame_empty_stairsinvertedcornerleft.name = Frame Stairs (Inverted Corner Left)
+items.frame_empty_stairsinvertedcornerleft.description = An empty framed inverted left-corner stair block.
+items.frame_empty_stairsinvertedcornerright.name = Frame Stairs (Inverted Corner Right)
+items.frame_empty_stairsinvertedcornerright.description = An empty framed inverted right-corner stair block.
+
+# ── FramedBlocks (Slopes) ───────────────────────────────────────
+items.frame_empty_slope.name = Frame Slope
+items.frame_empty_slope.description = An empty framed sloped ramp block.
+items.frame_empty_doubleslope.name = Frame Double Slope
+items.frame_empty_doubleslope.description = An empty framed double sloped block.
+items.frame_empty_halfslope.name = Frame Half Slope
+items.frame_empty_halfslope.description = An empty framed half-slope block.
+items.frame_empty_cornerslope.name = Frame Corner Slope
+items.frame_empty_cornerslope.description = An empty framed corner slope block.
+items.frame_empty_slopeedge.name = Frame Slope Edge
+items.frame_empty_slopeedge.description = An empty framed slope edge block.
+items.frame_empty_slopeslab.name = Frame Slope Slab
+items.frame_empty_slopeslab.description = An empty framed slope-slab combination block.
+items.frame_empty_slopepanel.name = Frame Slope Panel
+items.frame_empty_slopepanel.description = An empty framed slope-panel combination block.
+items.frame_empty_pyramid.name = Frame Pyramid
+items.frame_empty_pyramid.description = An empty framed pyramid block.
+
+# ── FramedBlocks (Pillars) ───────────────────────────────────────
+items.frame_empty_pillar.name = Frame Pillar
+items.frame_empty_pillar.description = An empty framed vertical pillar block.
+items.frame_empty_halfpillar.name = Frame Half Pillar
+items.frame_empty_halfpillar.description = An empty framed half-height pillar block.
+items.frame_empty_cornerpillar.name = Frame Corner Pillar
+items.frame_empty_cornerpillar.description = An empty framed corner pillar block.
+items.frame_empty_pillarsocket.name = Frame Pillar Socket
+items.frame_empty_pillarsocket.description = An empty framed pillar socket block.
+items.frame_empty_post.name = Frame Post
+items.frame_empty_post.description = An empty framed connecting post block.
+
+# ── FramedBlocks (Walls / Fences) ───────────────────────────────
+items.frame_empty_wall.name = Frame Wall
+items.frame_empty_wall.description = An empty framed wall block.
+items.frame_empty_fence.name = Frame Fence
+items.frame_empty_fence.description = An empty framed fence block.
+items.frame_empty_fencegate.name = Frame Fence Gate
+items.frame_empty_fencegate.description = An empty framed fence gate.
+
+# ── FramedBlocks (Panes / Boards) ───────────────────────────────
+items.frame_empty_pane.name = Frame Pane
+items.frame_empty_pane.description = An empty framed thin pane block.
+items.frame_empty_horizontalpane.name = Frame Horizontal Pane
+items.frame_empty_horizontalpane.description = An empty framed horizontal pane block.
+items.frame_empty_board.name = Frame Board
+items.frame_empty_board.description = An empty framed board block.
+items.frame_empty_halfboard.name = Frame Half Board
+items.frame_empty_halfboard.description = An empty framed half-height board block.
+
+# ── FramedBlocks (Prisms) ───────────────────────────────────────
+items.frame_empty_prism.name = Frame Prism
+items.frame_empty_prism.description = An empty framed prismatic block.
+items.frame_empty_slopedprism.name = Frame Sloped Prism
+items.frame_empty_slopedprism.description = An empty framed sloped prism block.
+
+# ── FramedBlocks (Doors / Gates) ────────────────────────────────
+items.frame_empty_door.name = Frame Door
+items.frame_empty_door.description = An empty framed door.
+items.frame_empty_trapdoor.name = Frame Trapdoor
+items.frame_empty_trapdoor.description = An empty framed trapdoor.
+items.frame_empty_irondoor.name = Frame Iron Door
+items.frame_empty_irondoor.description = An empty framed iron door.
+items.frame_empty_irontrapdoor.name = Frame Iron Trapdoor
+items.frame_empty_irontrapdoor.description = An empty framed iron trapdoor.
+items.frame_empty_gate.name = Frame Gate
+items.frame_empty_gate.description = An empty framed gate.
+
+# ── FramedBlocks (Interactive) ──────────────────────────────────
+items.frame_empty_button.name = Frame Button
+items.frame_empty_button.description = An empty framed button.
+items.frame_empty_lever.name = Frame Lever
+items.frame_empty_lever.description = An empty framed lever.
+items.frame_empty_pressureplate.name = Frame Pressure Plate
+items.frame_empty_pressureplate.description = An empty framed pressure plate.
+items.frame_empty_ladder.name = Frame Ladder
+items.frame_empty_ladder.description = An empty framed ladder.
+
+# ── FramedBlocks (Misc Structural) ──────────────────────────────
+items.frame_empty_chain.name = Frame Chain
+items.frame_empty_chain.description = An empty framed chain.
+items.frame_empty_tube.name = Frame Tube
+items.frame_empty_tube.description = An empty framed hollow tube.
+items.frame_empty_chest.name = Frame Chest
+items.frame_empty_chest.description = An empty framed chest.
+items.frame_empty_bookshelf.name = Frame Bookshelf
+items.frame_empty_bookshelf.description = An empty framed bookshelf.
+
+# ── FramedBlocks (Tools) ───────────────────────────────────────
+items.framing_tool.name = Framing Tool
+items.framing_tool.description = Applies or removes camouflage on Frame blocks. Hold a block while right-clicking an empty frame to camouflage it.
+

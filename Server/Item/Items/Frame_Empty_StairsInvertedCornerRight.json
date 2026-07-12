@@ -1,0 +1,21 @@
+{
+  "TranslationProperties": { "Name": "items.frame_empty_stairsinvertedcornerright.name" },
+  "Icon": "Icons/ItemsGenerated/Frame_Empty_StairsInvertedCornerRight.png",
+  "ItemLevel": 1, "MaxStack": 100,
+  "Categories": ["Materials", "Decoration"],
+  "BlockType": {
+    "Material": "Solid", "DrawType": "Model", "Opacity": "Transparent",
+    "Group": "Stone", "HitboxType": "Full", "Flags": {},
+    "Gathering": { "Breaking": { "GatherType": "Rocks" } },
+    "BlockParticleSetId": "Stone",
+    "CustomModel": "Blocks/Structures/Stairs/Stairs_Inverted_Corner_Right_SimpleUV.blockymodel",
+    "CustomModelTexture": [{ "Texture": "BlockTextures/Frame_Grid.png", "Weight": 1 }],
+    "BlockSoundSetId": "Stone", "PhysicalMaterialId": "Stone",
+    "TextureComputedColor": "#CCCCCC",
+    "VariantRotation": "UpDownNESW",
+    "PlacementSettings": { "RotationMode": "StairFacingPlayer" }
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": { "Type": ["Stone"] },
+  "ItemSoundSetId": "ISS_Blocks_Stone"
+}

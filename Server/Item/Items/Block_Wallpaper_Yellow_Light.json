@@ -1,0 +1,32 @@
+{
+  "TranslationProperties": {
+    "Name": "items.block_wallpaper_yellow_light.name",
+    "Description": "items.block_wallpaper_yellow_light.description"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Materials",
+    "Decoration"
+  ],
+  "Icon": "Icons/ItemsGenerated/Block_Wallpaper_Yellow_Light.png",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Organic",
+    "Textures": [
+      {
+        "All": "BlockTextures/Block_Wool_Yellow_Light.png"
+      }
+    ],
+    "BlockSoundSetId": "Cloth",
+    "BlockParticleSetId": "Dust"
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Cloth"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Cloth"
+}

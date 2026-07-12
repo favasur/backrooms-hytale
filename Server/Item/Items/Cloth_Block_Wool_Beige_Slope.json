@@ -1,0 +1,39 @@
+{
+  "TranslationProperties": {
+    "Name": "items.cloth_block_wool_beige_slope.name"
+  },
+  "ItemLevel": 1,
+  "MaxStack": 100,
+  "Categories": [
+    "Materials",
+    "Decoration"
+  ],
+  "Icon": "Icons/ItemsGenerated/Cloth_Block_Wool_Beige_Slope.png",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "Group": "Organic",
+    "HitboxType": "Full",
+    "CustomModel": "Blocks/Structures/Roofs/Slope.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/Block_Beige_Carpet.png",
+        "Weight": 1
+      }
+    ],
+    "BlockSoundSetId": "Cloth",
+    "BlockParticleSetId": "Dust",
+    "VariantRotation": "UpDownNESW",
+    "PlacementSettings": {
+      "RotationMode": "StairFacingPlayer"
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Cloth"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Cloth"
+}
